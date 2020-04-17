@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
+	<h:head>
+		<title>Survei Mahasiswa</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+	</h:head>
+
+	<h:body>
+		<div align="center">
+			<h1 class="title">TUGAS UTS RPLBK</h1>
+			<br/>
+			<div class="container">
+				<div class="card">
+					<div class="card-header">
+						<strong>Survei Data Mahasiswa</strong>
+					</div>
+					<div class="card-body" align="left">
+						<h:messages errorClass="text-danger"/>
+						<h:form>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label">Nama Depan</label>
+								<div class="col-sm-10">
+									<h:inputText styleClass="form-control" required="true" requiredMessage="Nama depan tidak boleh kosong!" value="#{bidBean1.userId}"/>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label">Nama Belakang</label>
+								<div class="col-sm-10">
+									<h:inputText styleClass="form-control" required="true" requiredMessage="Nama belakang tidak boleh kosong!"/>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label">Alamat Jalan</label>
+								<div class="col-sm-10">
+									<h:inputText styleClass="form-control" required="true" requiredMessage="Almamat jalan tidak boleh kosong!"/>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label">Kota</label>
+								<div class="col-sm-10">
+									<h:inputText styleClass="form-control" required="true" requiredMessage="Kota tidak boleh kosong!"/>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label">Negara Bagian</label>
+								<div class="col-sm-10">
+									<h:inputText styleClass="form-control" required="true" requiredMessage="Negara bagian tidak boleh kosong!"/>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label">Kode POS</label>
+								<div class="col-sm-10">
+									<h:inputText styleClass="form-control" required="true" requiredMessage="Kode POS tidak boleh kosong!"/>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label">Nomor Telepon</label>
+								<div class="col-sm-10">
+									<h:inputText styleClass="form-control" required="true" requiredMessage="Nomor telepon tidak boleh kosong!"/>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label">Email</label>
+								<div class="col-sm-10">
+									<h:inputText styleClass="form-control" required="true" requiredMessage="Email tidak boleh kosong!"/>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label">Tanngal Survei</label>
+								<div class="col-sm-10">
+									<h:inputText styleClass="form-control" required="true" requiredMessage="Tanggal survei tidak boleh kosong!"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Apa yang Anda sukai dari Universitas Diponegoro?</label>
+								<br></br>
+								<div class="form-check form-check-inline">
+		 							<input class="form-check-input" type="checkbox" value=""></input>
+		 							<label class="form-check-label">Pengajar</label>
+		 						</div>
+		 						<div class="form-check form-check-inline">
+		 							<input class="form-check-input" type="checkbox" value=""></input>
+		 							<label class="form-check-label">Fasilitas</label>
+		 						</div>
+		 						<div class="form-check form-check-inline">
+		 							<input class="form-check-input" type="checkbox" value=""></input>
+		 							<label class="form-check-label">Lokasi</label>
+		 						</div>
+		 						<div class="form-check form-check-inline">
+		 							<input class="form-check-input" type="checkbox" value=""></input>
+		 							<label class="form-check-label">Asrama</label>
+		 						</div>
+							</div>
+							<div class="form-group">
+								<label>Dari manakah Anda mengetahui perihal Universitas Diponegoro?</label>
+								<br></br>
+								<div class="form-check form-check-inline">
+		 							<input class="form-check-input" type="radio" name="radio" value=""></input>
+		 							<label class="form-check-label">Teman</label>
+		 						</div>
+		 						<div class="form-check form-check-inline">
+		 							<input class="form-check-input " type="radio" name="radio" value=""></input>
+		 							<label class="form-check-label">Koran</label>
+		 						</div>
+		 						<div class="form-check form-check-inline">
+		 							<input class="form-check-input" type="radio" name="radio" value=""></input>
+		 							<label class="form-check-label">Radio</label>
+		 						</div>
+		 						<div class="form-check form-check-inline">
+		 							<input class="form-check-input" type="radio" name="radio" value=""></input>
+		 							<label class="form-check-label">Televisi</label>
+		 						</div>
+		 						<div class="form-check form-check-inline">
+		 							<input class="form-check-input" type="radio" name="radio" value=""></input>
+		 							<label class="form-check-label">Internet</label>
+		 						</div>
+		 						<div class="form-check form-check-inline">
+		 							<input class="form-check-input" type="radio" name="radio" value=""></input>
+		 							<label class="form-check-label">Lainnya</label>
+		 						</div>
+							</div>
+							<div class="form-group">
+								<label>Apakah Anda merekomendasikan Universitas Diponegoro ke teman-teman Anda?</label>
+								<select class="custom-select">
+									<option selected="selected" disabled="disabled">Pilih</option>
+									<option value="1">Sangat Mungkin</option>
+									<option value="2">Mungkin</option>
+									<option value="3">Tidak Mungkin</option>
+								</select>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-2 col-form-label"></label>
+								<div class="col-sm-10">
+									<h:commandButton value="Submit" styleClass="btn btn-primary" action="#{bidBean1.doBid}"/>
+								</div>
+							</div>
+						</h:form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</h:body>
+</html>
