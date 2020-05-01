@@ -7,7 +7,8 @@
 4. Pada browser ketik: http://localhost:8080/survei-jsf (port menyesuaikan).
 
 ### URL S3 BUCKET/HOMEPAGE
-https://rsbk.s3.amazonaws.com/index.html
+- https://rsbk.s3.amazonaws.com/index.html
+- http://3.82.244.157
 
 ### URL EC2 INSTANCE/APPLICATION
-http://3.82.244.157:8080/survei-jsf/
+- http://3.82.244.157:8080/survei-jsf/
